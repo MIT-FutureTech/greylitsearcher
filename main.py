@@ -19,7 +19,7 @@ def check_password():
             st.stop()
         
         # Show password input form
-        st.title("🔒 Greylitsearcher - Authentication Required")
+        st.title("Greylitsearcher - Authentication Required")
         password = st.text_input("Enter password", type="password", key="password_input")
         
         if st.button("Login"):
