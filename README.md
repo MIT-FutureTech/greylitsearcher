@@ -188,15 +188,15 @@ Your Airtable table should have the following fields:
 
 Once configured, the app will automatically show a "Save All Results to Airtable" button after you perform a search. The integration:
 
-- ✅ Saves all search results to Airtable
-- ✅ Checks for duplicates (optional, can be toggled)
-- ✅ Preserves priority levels (1, 2, 3)
-- ✅ Tracks search queries
-- ✅ Shows real-time progress during save
-- ✅ Provides detailed statistics (created, duplicates, errors)
-- ✅ Sets status to "Todo" for new records
-- ✅ Sets scraped_at to current date (YYYY-MM-DD format)
-- ✅ Handles rate limiting (5 requests/second)
+- Saves all search results to Airtable
+- Checks for duplicates (optional, can be toggled)
+- Preserves priority levels (1, 2, 3)
+- Tracks search queries
+- Shows real-time progress during save
+- Provides detailed statistics (created, duplicates, errors)
+- Sets status to "Todo" for new records
+- Sets scraped_at to current date (YYYY-MM-DD format)
+- Handles rate limiting (5 requests/second)
 
 ### Data Format
 
@@ -345,27 +345,15 @@ Potential improvements:
 
 ## Integration with Data Pipeline
 
-Greylitsearcher is part of a larger data pipeline system:
+Greylitsearcher will be part of a larger data pipeline system:
 
 ```
-Greylitsearcher → Data Processor → Airtable → LLM Screener → Human Review → Vector DB → Chatbot
+Greylitsearcher → Data Processor + LLM Screener → Airtable → Human Review → Vector DB → Chatbot
 ```
 
 See `../ARCHITECTURE.md` for the complete system architecture.
 
 ## License
 
-[Add your license here]
-
-## Support
-
-For issues or questions:
-1. Check this README for common solutions
-2. Review Google Custom Search API documentation
-3. Check Streamlit documentation for UI issues
-4. See `../ARCHITECTURE.md` for system integration questions
-
-## Contributing
-
-[Add contribution guidelines if applicable]
+MIT
 
